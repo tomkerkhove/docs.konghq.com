@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: Welcome to Kong Enterprise 
+=======
+title: Welcome to Kong Enterprise
+>>>>>>> jpk-name-update
 ---
 
 # Welcome to Kong Enterprise

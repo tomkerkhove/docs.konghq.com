@@ -19,8 +19,13 @@ title: Rate Limiting Advanced Plugin
 
 Rate limiting functionality is available in two plugins - one is
 [bundled with Kong](/plugins/rate-limiting/),
+<<<<<<< HEAD
 and the other is bundled with Kong Enterprise. This page documents the Kong Enterprise version of
 the Rate Limiting plugin, which has greater functionality and performance than the Kong version.
+=======
+and the other is bundled with Kong Enterprise. This page documents the Kong EE version of
+the Rate Limiting plugin, which has greater functionality and performance than the standard version.
+>>>>>>> jpk-name-update
 
 ## Configuration
 

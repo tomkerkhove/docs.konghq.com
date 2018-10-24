@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: How to Access Your Kong Enterprise  License
+=======
+title: How to Access Your Kong Enterprise License
+>>>>>>> jpk-name-update
 toc: false
 ---
 

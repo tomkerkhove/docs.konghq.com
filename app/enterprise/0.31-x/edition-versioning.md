@@ -20,4 +20,8 @@ Changes to the released version of Kong Enterprise occur as follows:
 
 - **Z** is incremented against previously released versions of Kong Enterprise when a critical fix must be implemented against an old release.
 
+<<<<<<< HEAD
 The nature of this versioning scheme is such that the scope of semantic weight of changes in each release of Kong Enterprise **cannot be interpreted solely through the change in version number**. Because of this, we strongly encourage Enterprise users to consult the [Kong Enterprise Changelog](/enterprise/latest/changelog) and [Upgrading Kong Enterprise](https://support.konghq.com/hc/en-us/articles/115009693288-Upgrading-Kong) before upgrading.
+=======
+The nature of this versioning scheme is such that the scope of semantic weight of changes in each release of Kong Enterprise **cannot be interpreted solely through the change in version number**. Because of this, we strongly encourage Enterprise Edition users to consult the [Kong Enterprise Changelog](/enterprise/latest/changelog) and [Upgrading Kong Enterprise](https://support.konghq.com/hc/en-us/articles/115009693288-Upgrading-Kong) before upgrading.
+>>>>>>> jpk-name-update

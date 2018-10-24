@@ -22,7 +22,11 @@ Transform the request sent by a client in Kong, before forwarding the request to
 
 Request transforming functionality is available in two plugins - one is
 [bundled with Kong](/plugins/request-transformer/),
+<<<<<<< HEAD
 and the other is bundled with Kong Enterprise. This page documents the Kong Enterprise version of
+=======
+and the other is bundled with Kong Enterprise. This page documents the Kong EE version of
+>>>>>>> jpk-name-update
 the Request Transformer plugin, which has greater functionality than the Kong version.
 
 ## Configuration

@@ -68,7 +68,11 @@
       enterprise: true
 
     - name: Rate Limiting
+<<<<<<< HEAD
       info: Upgrades Kong's rate limiting with more flexibility and higher performance.
+=======
+      info: Upgrades Kong rate limiting with more flexibility and higher performance.
+>>>>>>> jpk-name-update
       enterprise: true
 
     - name: Rate Limiting

@@ -11,7 +11,11 @@ Thank you for installing Kong Enterprise. This document orients you to Kong's bu
 ## Assumptions
 
 * You have installed a recent version of Kong Enterprise that includes Dev Portal functionality.
+<<<<<<< HEAD
     * Dev Portal was introduced in Kong Enterprise v0.31
+=======
+    * Dev Portal was introduced in Kong EE v0.31
+>>>>>>> jpk-name-update
 * You are a Kong Admin, and have Super Admin permissions in Kong RBAC.
     * Or, the RBAC feature of Kong Enterprise is disabled.
 * You have a OpenAPI Specification v2 or v3 file (also known as a Swagger Specification, or a Swagger file) that documents at least part of your API.

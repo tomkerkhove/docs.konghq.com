@@ -4,7 +4,12 @@ title: Adding Consumers
 
 # Adding Consumers
 
+<<<<<<< HEAD
 In the last section, we learned how to add plugins to Kong Enterprise - in this section
+=======
+In the last section, we learned how to add plugins to Kong Enterprise
+(EE) - in this section
+>>>>>>> jpk-name-update
 we're going to learn how to add [Consumers][consumers] to Kong. Consumers are
 associated to individuals or applications using your API, and can be used
 for tracking, access management, and more.

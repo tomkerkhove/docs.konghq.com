@@ -9,7 +9,11 @@ title: Kong Enterprise Documentation
     <div class="left">
       <img src="/assets/images/icons/icn-buildings.svg" />
     </div>
+<<<<<<< HEAD
     <p>Kong Enterprise adds features, functionality, and performance to Kong. This documentation doesn’t cover the general practices of using Kong that are common to both Kong  and Kong Enterprise - learn the <a href="">basics in Kong documentation</a>.</p>
+=======
+    <p>Kong Enterprise adds features, functionality, and performance to Kong. This documentation doesn’t cover the general practices of using Kong that are common to both Kong and EE - learn the <a href="">basics in Kong documentation</a>.</p>
+>>>>>>> jpk-name-update
   </div>
 </div>
 {% endif %}

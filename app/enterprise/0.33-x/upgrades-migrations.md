@@ -3,7 +3,11 @@ title: Upgrades and Migrations
 ---
 
 # Upgrades and Migrations
+<<<<<<< HEAD
 ## Upgrades of Kong Enterprise 
+=======
+## Upgrades of Kong Enterprise
+>>>>>>> jpk-name-update
 
 An upgrade (or update) is the process of changing the version of the software currently deployed to a more recent one; there is no difference with the concept of the update. We suggest following the below steps to perform a useful upgrade; notice, however, that this approach requires downtime, in case you need high availability review the Blue/Green Deployment section below.
 
