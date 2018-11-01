@@ -3,7 +3,7 @@ title: kong.log
 pdk: true
 ---
 
-# kong.log
+## kong.log
 
 This namespace contains an instance of a "logging facility", which is a
  table containing all of the methods described below.
@@ -13,7 +13,10 @@ This namespace contains an instance of a "logging facility", which is a
  dedicated to the plugin. This allows the logs to be prefixed with the
  plugin's name for debugging purposes.
 
-## kong.log(...)
+
+
+
+### kong.log(...)
 
 Write a log line to the location specified by the current Nginx
  configuration block's `error_log` directive, with the `notice` level (similar

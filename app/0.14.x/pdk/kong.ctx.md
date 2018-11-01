@@ -3,11 +3,13 @@ title: kong.ctx
 pdk: true
 ---
 
-# kong.ctx
+## kong.ctx
 
 Current request context data
 
-## kong.ctx.shared
+
+
+### kong.ctx.shared
 
 A table that has the lifetime of the current request and is shared between
  all plugins.  It can be used to share data between several plugins in a given
@@ -54,7 +56,7 @@ end
 [Back to TOC](#table-of-contents)
 
 
-## kong.ctx.plugin
+### kong.ctx.plugin
 
 A table that has the lifetime of the current request - Unlike
  `kong.ctx.shared`, this table is **not** shared between plugins.   Instead,
