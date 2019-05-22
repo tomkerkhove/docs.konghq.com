@@ -130,3 +130,12 @@ Running Kong on Azure Container Instances is super easy:
     That's it - You can now use Kong by browsing to `<web-app-name>.azurewebsites.net`.
 
     Quickly learn how to use Kong with the [5-minute Quickstart](/latest/getting-started/quickstart).
+
+az container create --name kong-migrations --resource-group kong-on-azure --image kong:0.13 --restart-policy Never --environment-variables KONG_PG_HOST="kong-on-azure-postgressql.postgres.database.azure.com"  KONG_PG_USER="kong@kong-on-azure-postgressql" KONG_PG_PASSWORD="1234567890AZERTYUIOP$" --command-line "kong migrations up"
+
+
+az container create --name kong-gateway --dns-name-label kong-gateway --resource-group kong-on-azure --image kong:0.13 --port 8000 8443 8001 8444 --environment-variables KONG_PG_HOST="kong-on-azure-postgressql.postgres.database.azure.com" KONG_PG_USER="kong@kong-on-azure-postgressql" KONG_PG_PASSWORD="1234567890AZERTYUIOP$" KONG_PROXY_ACCESS_LOG="/dev/stdout" KONG_ADMIN_ACCESS_LOG="/dev/stdout" KONG_PROXY_ERROR_LOG="/dev/stderr" KONG_ADMIN_ERROR_LOG="/dev/stderr" KONG_ADMIN_LISTEN="0.0.0.0:8001, 0.0.0.0:8444 ssl"
+
+az appservice plan create --name kong-gateway-plan --resource-group kong-on-azure --is-linux --location "West Europe" --sku S1 --number-of-workers 1
+az webapp create --name kong-gateway --resource-group kong-on-azure --plan kong-gateway-plan --deployment-container-image-name kong:0.13
+az webapp config appsettings set --name kong-gateway --resource-group kong-on-azure --settings KONG_PG_HOST="kong-on-azure-postgressql.postgres.database.azure.com" KONG_PG_USER="kong@kong-on-azure-postgressql" KONG_PG_PASSWORD="1234567890AZERTYUIOP$" KONG_PROXY_ACCESS_LOG="/dev/stdout" KONG_ADMIN_ACCESS_LOG="/dev/stdout" KONG_PROXY_ERROR_LOG="/dev/stderr" KONG_ADMIN_ERROR_LOG="/dev/stderr" KONG_ADMIN_LISTEN="0.0.0.0:8001, 0.0.0.0:8444 ssl"
